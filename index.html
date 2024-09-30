@@ -2,36 +2,56 @@
 <html lang="uk">
 <head>
     <meta charset="UTF-8">
-    <title>Барбершоп "Король Стилю"</title>
+    <title>BARBERSHOP "The King"</title>
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
-     <!-- Не забудь поміняти. Сірьожка -->
+    <!-- Не забудь поміняти. Сірьожка -->
     <div id="preloader">
         <img src="img/the_king_logo-01.svg" alt="Іконка завантаження" class="loader-icon">
-        <p>Шо ти лисий, плакі плакі...</p>
+        <!-- <p>Шо ти лисий, плакі плакі...</p> -->
     </div>
     <div id="content">
         <!-- Навігація -->
         <nav>
             <ul>
-                <li><a href="#about">Про нас</a></li>
                 <li><a href="#services">Послуги</a></li>
                 <li><a href="#gallery">Галерея</a></li>
                 <li><a href="#team">Команда</a></li>
                 <li><a href="#contact">Контакти</a></li>
+                <li><a href="#about">Про нас</a></li>
             </ul>
         </nav>
-        <!-- Шапка -->
+        <!-- Шапка (оновлена) -->
         <header>
-            <h1>Барбершоп "Король Стилю"</h1>
+            <h1>BARBERSHOP "The King"</h1>
             <p>Найкраще місце для сучасних чоловіків, які цінують свій образ</p>
+            <br> <!-- Порожній рядок між контактами -->
+            <div class="contact-info">
+                <div class="location">
+                    <p>м. КИЇВ, вулиця Срібнокільська, 3</p>
+                    <!-- <p>+380980950462</p> -->
+                    <p><a href="tel:+380980950462">&#43;380&nbsp;98&nbsp;095&#45;04&#45;62</a></p>
+                </div>  
+                <br> <!-- Порожній рядок між контактами -->   
+                <div class="location">
+                    <p>м. КИЇВ, вулиця Урлівська, 16</p>
+                    <p><a href="tel:+380681015543">&#43;380&nbsp;98&nbsp;095&#45;04&#45;62</a></p>
+                </div>
+                <br>
+                <div class="contact-info">
+                    <a href="https://n805944.alteg.io/company/757364/personal/menu?o=" class="button" target="_blank">Записатися</a>
+                </div>
+            </div>
         </header>
+        
+               
         <!-- Про нас -->
         <section id="about">
             <h2>Про нас</h2>
-            <p>Барбершоп "Король Стилю" — це місце, де кожен чоловік може відчути себе особливим. Наші майстри поєднують традиційні техніки з сучасними трендами, щоб створити ідеальний образ для кожного клієнта.</p>
+            <p>BARBERSHOP "The King" — це місце, де кожен чоловік може відчути себе особливим. Наші майстри поєднують традиційні техніки з сучасними трендами, щоб створити ідеальний образ для кожного клієнта.</p>
         </section>
         <!-- Послуги -->
         <section id="services">
@@ -40,7 +60,7 @@
                 <div class="service-item">
                     <div class="service-header">
                         <h3>Чоловіча стрижка</h3>
-                        <p class="price">400 ₴</p>
+                        <p class="price">550 ₴</p>
                     </div>
                     <p class="duration">45 хв</p>
                     <p>Класична чоловіча стрижка для будь-якого стилю.</p>
@@ -48,45 +68,70 @@
                 <div class="service-item">
                     <div class="service-header">
                         <h3>Оформлення бороди</h3>
-                        <p class="price">300 ₴</p>
+                        <p class="price">400 ₴</p>
                     </div>
                     <p class="duration">30 хв</p>
                     <p>Професійне оформлення бороди та вусів.</p>
                 </div>
                 <div class="service-item">
                     <div class="service-header">
-                        <h3>Стрижка під машинку</h3>
-                        <p class="price">350 ₴</p>
-                    </div>
-                    <p class="duration">45 хв</p>
-                    <p>Швидка та стильна стрижка під машинку.</p>
-                </div>
-                <div class="service-item">
-                    <div class="service-header">
-                        <h3>Батько та син</h3>
-                        <p class="price">550 ₴</p>
-                    </div>
-                    <p class="duration">1 год 30 хв</p>
-                    <p>Спеціальна пропозиція для батька та сина.</p>
-                </div>
-                <div class="service-item">
-                    <div class="service-header">
                         <h3>Дитяча стрижка</h3>
-                        <p class="price">350 ₴</p>
+                        <p class="price">500 ₴</p>
                     </div>
                     <p class="duration">45 хв</p>
                     <p>Стильні стрижки для наших маленьких клієнтів.</p>
                 </div>
                 <div class="service-item">
                     <div class="service-header">
+                        <h3>Стрижка під машинку</h3>
+                        <p class="price">500 ₴</p>
+                    </div>
+                    <p class="duration">45 хв</p>
+                    <p>Швидка та стильна стрижка під машинку.</p>
+                </div>
+                <div class="service-item">
+                    <div class="service-header">
                         <h3>Стрижка + борода</h3>
-                        <p class="price">550 ₴</p>
+                        <p class="price">750 ₴</p>
                     </div>
                     <p class="duration">1 год 15 хв</p>
                     <p>Комплексний догляд: стрижка та оформлення бороди.</p>
                 </div>
+                <div class="service-item">
+                    <div class="service-header">
+                        <h3>Батько та син</h3>
+                        <p class="price">900 ₴</p>
+                    </div>
+                    <p class="duration">1 год 30 хв</p>
+                    <p>Спеціальна пропозиція для батька та сина.</p>
+                </div>
+                <div class="service-item">
+                    <div class="service-header">
+                        <h3>Стрижка машинкою + борода</h3>
+                        <p class="price">700 ₴</p>
+                    </div>
+                    <p class="duration">1 год</p>
+                    <p>Комплексний догляд: стрижка під машинку та борода.</p>
+                </div>
+                <div class="service-item">
+                    <div class="service-header">
+                        <h3>Камуфлювання бороди</h3>
+                        <p class="price">350 ₴</p>
+                    </div>
+                    <p class="duration">30 хв</p>
+                    <p>Натуральне камуфлювання бороди.</p>
+                </div>
+                <div class="service-item">
+                    <div class="service-header">
+                        <h3>Камуфлювання голови</h3>
+                        <p class="price">450 ₴</p>
+                    </div>
+                    <p class="duration">45 хв</p>
+                    <p>Натуральне камуфлювання голови.</p>
+                </div>
             </div>
         </section>
+        
         <!-- Галерея -->
         <section id="gallery">
             <h2>Наші роботи</h2>
@@ -107,27 +152,68 @@
                     <img src="img/6.webp" alt="Любов">
                     <h3>Любов</h3>
                     <p>Спеціаліст з класичних стрижок</p>
-                    <a href="https://n805944.alteg.io/company/757364/personal/select-master?o=m2186565"><button>Записатись</button></a>
+                    <a href="https://n805944.alteg.io/company/757364/personal/select-master?o=m2186565" target="_blank"><button>Записатись</button></a>
                 </div>
                 <div class="team-member">
-                    <img src="img/6.webp" alt="Анастасія">
+                    <img src="img/barbers/anastasiya_barber.png" alt="Анастасія">
                     <h3>Анастасія</h3>
                     <p>Майстер сучасних технік та стилів</p>
-                    <a href="https://n805944.alteg.io/company/757364/personal/select-master?o=m2178185"><button>Записатись</button></a>
+                    <a href="https://n805944.alteg.io/company/757364/personal/select-master?o=m2178185" target="_blank"><button>Записатись</button></a>
                 </div>
                 <div class="team-member">
-                    <img src="img/6.webp" alt="Анастасія">
-                    <h3>Анастасія</h3>
+                    <img src="img/6.webp" alt="Настя-рижа">
+                    <h3>Настя-рижа</h3>
                     <p>Експерт з догляду за бородою</p>
-                    <a href="https://n805944.alteg.io/company/757364/personal/select-master?o=m2167275"><button>Записатись</button></a>
+                    <a href="https://n805944.alteg.io/company/757364/personal/select-master?o=m2167275" target="_blank"><button>Записатись</button></a>
                 </div>
             </div>
         </section>
+<!-- Дещо корисне для тебе -->
+<section id="useful" class="useful-section">
+    <h2>Дещо корисне для тебе</h2>
+    <p>Тут ти знайдеш корисні поради та інформацію про догляд за волоссям та бородою, а також новини та акції нашого барбершопу.</p>
+    
+    <div class="service-card">
+        <img src="img/5.webp" alt="Face Waxing" class="service-image">
+        <div class="service-info">
+            <strong>Face Waxing</strong>
+            <p>Наші майстри пропонують професійну епіляцію обличчя для створення ідеального вигляду.</p>
+        </div>
+    </div>
+</section>
+<div class="gift-section">
+    <div class="gift-card" onclick="toggleForm()">
+        <h3>Подарунковий сертифікат</h3>
+        <p>Натисніть, щоб отримати сертифікат!</p>
+    </div>
+    <div class="gift-image">
+        <img src="img/king_logo.jpg" alt="Подарунковий сертифікат" />
+    </div>
+</div>
+
+<!-- Форма для сертифіката -->
+<div id="gift-form" class="gift-form">
+    <h4>Заповніть форму для отримання сертифіката</h4>
+    <form>
+        <label for="name">Ваше ім'я:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Ваш Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="amount">Сума сертифіката:</label>
+        <input type="number" id="amount" name="amount" required>
+
+        <input type="submit" value="Отримати сертифікат">
+        <button type="button" onclick="toggleForm()">Закрити</button>
+    </form>
+</div>
+
         <!-- Контакти -->
         <section id="contact">
             <h2>Зв'яжіться з нами</h2>
-            <p>Телефон: <a href="tel:+380980950462">&#43;380&nbsp;98&nbsp;095&#45;04&#45;62</a></p>
-            <p>Інстаграм: <a href="https://www.instagram.com/the.king___king/" target=”_blank”>The King</a></p>
+            #<p>Телефон: <a href="tel:+380980950462">&#43;380&nbsp;98&nbsp;095&#45;04&#45;62</a></p>
+            <p>Інстаграм: <a href="https://www.instagram.com/the.king___king/" target="_blank">The King</a></p>
             <p>Адреса: м. Київ, вулиця Срібнокільська, 3</p>
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2543.155440003012!2d30.627195576554406!3d50.40094067158279!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4c5aabbdc6109%3A0x732a0275c397f4cc!2zQmFyYmVyc2hvcCAiVGhlIEtpbmciINCR0LDRgNCx0LXRgNGI0L7QvyAtINC80YPQttGB0LrQuNC1INGB0YLRgNC40LbQutC4IC0g0L_QsNGA0LjQutC80LDRhdC10YDRgdC60LDRjw!5e0!3m2!1suk!2sua!4v1726955844984!5m2!1suk!2sua" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </section>

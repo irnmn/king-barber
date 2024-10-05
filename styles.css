@@ -90,6 +90,10 @@ header p {
     max-width: 600px;
     text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
 }
+header a {
+    color: inherit;
+    text-decoration: none;
+}
 /* Анімації */
 @keyframes fadeIn {
     from {
@@ -174,6 +178,7 @@ section h2::after {
 }
 .price {
     color: #ffcc33;
+    white-space: nowrap;
 }
 .service-item p {
     font-size: 1em;
@@ -270,9 +275,20 @@ footer {
     padding: 1em 0;
 }
 /* Адаптивність */
+@media (max-width: 1000px) {
+    .service-item {
+        width: 45%;
+    }
+}
 @media (max-width: 768px) {
     .service-item, .team-member, .gallery-grid img {
-        width: 80%;
+        width: 45%;
+    }
+    .service-header {
+        display: block;
+    }
+    .service-header .price {
+        margin: 16px 0;
     }
     nav ul li {
         margin: 0 0.5em;
@@ -284,7 +300,14 @@ footer {
         font-size: 1em;
     }
 }
-
+@media (max-width: 640px) {
+    .service-item {
+        width: 95%;
+    }
+    .gallery-grid img {
+        width: 40%;
+    }
+}
 .phone-link {
     text-decoration: none; /* Прибирає підкреслення */
     color: inherit; /* Використовує колір тексту батьківського елемента */
@@ -361,3 +384,92 @@ footer {
     text-decoration: underline; /* Підкреслення при наведенні */
 }
 
+
+.main-navigation {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 16px;
+}
+.main-navigation .logo__image {
+    max-width: 200px;
+}
+.main-navigation .social-links a {
+    text-decoration: none;
+}
+.mobile-menu-button {
+    display: none;
+}
+
+@media (max-width: 900px) {
+    .main-navigation .menu {
+        display: none;
+    }
+    .mobile-menu-button {
+        display: block;
+        padding: 0;
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+    }
+    .mobile-menu-button svg {
+        fill: #FFF;
+        width: 30px;
+        height: 30px;
+        margin-left: 16px;
+    }
+    .main-navigation .social-links {
+        margin-left: auto;
+    }
+}
+
+.mobile-menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 40px;
+    background-color: #000;
+    color: #FFF;
+    text-align: center;
+    z-index: 1001;
+
+    transition: all .3s ease;
+    transform: translateX(-100%);
+    visibility: hidden;
+    pointer-events: none;
+}
+.mobile-menu.opened {
+    pointer-events: all;
+    visibility: visible;
+    transform: translateX(0);
+}
+.mobile-menu ul {
+    list-style: none;
+}
+.mobile-menu a {
+    display: block;
+    padding: 10px;
+    font-size: 25px;
+    text-decoration: none;
+    color: inherit;
+}
+.close-mobile-menu {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+.close-mobile-menu svg {
+    width: 24px;
+    height: 24px;
+    fill: #FFF;
+}

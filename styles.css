@@ -514,7 +514,7 @@ header {
 
 .header-text {
     width: 100%; /* Задає ширину 100% */
-    text-align: center; /* Центрує текст (за бажанням) */
+    text-align: -webkit-center; /* Центрує текст (за бажанням) */
     padding: 0 20px; /* Додає бокові відступи, якщо потрібно */
     box-sizing: border-box; /* Уключає padding у загальну ширину */
 }

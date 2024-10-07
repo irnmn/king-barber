@@ -3,22 +3,26 @@
     padding: 0;
     box-sizing: border-box;
 }
+
 body {
     font-family: 'Montserrat', sans-serif;
     background-color: #3b1313;
     color: #333;
     overflow-x: hidden;
 }
+
 html {
     scroll-behavior: smooth;
 }
+
 #preloader {
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: #524c4c78; /* Темний фон */
+    background-color: #524c4c78;
+    /* Темний фон */
     color: #fff;
     display: flex;
     justify-content: center;
@@ -41,6 +45,7 @@ html {
 #content {
     display: none;
 }
+
 /* Навігація */
 nav {
     position: fixed;
@@ -48,24 +53,29 @@ nav {
     background-color: #000;
     z-index: 1000;
 }
+
 nav ul {
     display: flex;
     justify-content: center;
     padding: 1em 0;
 }
+
 nav ul li {
     list-style: none;
     margin: 0 1.5em;
 }
+
 nav ul li a {
     color: #fff;
     text-decoration: none;
     font-weight: 600;
     transition: color 0.3s;
 }
+
 nav ul li a:hover {
     color: #ffcc33;
 }
+
 /* Шапка */
 header {
     /* background-image: url('img/wp.webp'); */
@@ -80,50 +90,62 @@ header {
     flex-direction: column;
     animation: fadeIn 1.5s ease-in-out;
 }
+
 header h1 {
     font-size: 4em;
     margin-bottom: 0.5em;
-    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
+
 header p {
     font-size: 1.5em;
     max-width: 600px;
-    text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
 }
+
 header a {
     color: inherit;
     text-decoration: none;
 }
+
 /* Анімації */
 @keyframes fadeIn {
     from {
         opacity: 0;
         transform: translateY(20px);
     }
+
     to {
         opacity: 1;
         transform: translateY(0);
     }
 }
+
 @keyframes bounce {
-    0%, 100% {
+
+    0%,
+    100% {
         transform: translateY(0);
     }
+
     50% {
         transform: translateY(-10px);
     }
 }
+
 /* Секції */
 section {
     padding: 4em 0;
     animation: fadeIn 1.5s ease-in-out;
 }
+
 section h2 {
     text-align: center;
     font-size: 2.5em;
     margin-bottom: 1em;
     position: relative;
 }
+
 section h2::after {
     content: '';
     width: 50px;
@@ -134,10 +156,12 @@ section h2::after {
     transform: translateX(-50%);
     bottom: -10px;
 }
+
 /* Про нас */
 #about {
     background-color: #fff;
 }
+
 #about p {
     max-width: 800px;
     margin: 0 auto;
@@ -145,15 +169,18 @@ section h2::after {
     line-height: 1.6em;
     text-align: center;
 }
+
 /* Послуги */
 #services {
     background-color: #f4f4f4;
 }
+
 .service-list {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
 }
+
 .service-item {
     background-color: #fff;
     width: 30%;
@@ -164,9 +191,11 @@ section h2::after {
     transition: transform 0.3s;
     position: relative;
 }
+
 .service-item:hover {
     transform: translateY(-10px);
 }
+
 .service-header {
     display: flex;
     justify-content: space-between;
@@ -176,55 +205,44 @@ section h2::after {
     padding-bottom: 0.5em;
     border-bottom: 2px solid #ffcc33;
 }
+
 .price {
     color: #ffcc33;
     white-space: nowrap;
 }
+
 .service-item p {
     font-size: 1em;
     margin-bottom: 1em;
 }
+
 .duration {
     font-size: 0.9em;
     color: #777;
     margin-bottom: 0.5em;
     margin-top: 10px;
-    
+
 }
-/* Галерея */
-#gallery {
-    background-color: #fff;
-}
-.gallery-grid {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-.gallery-grid img {
-    width: 30%;
-    margin: 1em;
-    border-radius: 8px;
-    transition: transform 0.3s;
-}
-.gallery-grid img:hover {
-    transform: scale(1.05);
-}
+
 /* Команда */
 #team {
     background-color: #f4f4f4;
 }
+
 .team-list {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
 }
+
 .team-member {
     width: 30%;
     text-align: center;
     margin: 1em 0;
-    
+
 
 }
+
 .team-member img {
     width: 200px;
     height: 200px;
@@ -232,10 +250,12 @@ section h2::after {
     object-fit: cover;
     margin-bottom: 1em;
 }
+
 .team-member h3 {
     margin-bottom: 0.5em;
-    
+
 }
+
 /* Кнопка "Записатись" */
 .team-member button {
     background-color: #ffcc33;
@@ -248,25 +268,30 @@ section h2::after {
     cursor: pointer;
     transition: background-color 0.3s, transform 0.3s;
 }
+
 .team-member button:hover {
     background-color: #ffbb00;
     transform: translateY(-5px);
 }
+
 /* Контакти */
 #contact {
     background-color: #000;
     color: #fff;
     text-align: center;
 }
+
 #contact p {
     font-size: 1.2em;
     margin-bottom: 1em;
 }
+
 #contact a {
     color: #ffcc33;
     text-decoration: none;
     font-weight: 600;
 }
+
 /* Футер */
 footer {
     background-color: #222;
@@ -274,89 +299,130 @@ footer {
     text-align: center;
     padding: 1em 0;
 }
+
 /* Адаптивність */
 @media (max-width: 1000px) {
     .service-item {
         width: 45%;
     }
 }
+
 @media (max-width: 768px) {
-    .service-item, .team-member, .gallery-grid img {
+
+    .service-item,
+    .team-member,
+    .gallery-grid img {
         width: 45%;
     }
+
     .service-header {
         display: block;
     }
+
     .service-header .price {
         margin: 16px 0;
     }
+
     nav ul li {
         margin: 0 0.5em;
     }
+
     header h1 {
         font-size: 2.5em;
     }
+
     header p {
         font-size: 1em;
     }
 }
+
 @media (max-width: 640px) {
     .service-item {
         width: 95%;
     }
+
     .gallery-grid img {
         width: 40%;
     }
 }
+
 .phone-link {
-    text-decoration: none; /* Прибирає підкреслення */
-    color: inherit; /* Використовує колір тексту батьківського елемента */
+    text-decoration: none;
+    /* Прибирає підкреслення */
+    color: inherit;
+    /* Використовує колір тексту батьківського елемента */
 }
 
 .phone-link:hover {
-    color: inherit; /* Колір при наведенні */
+    color: inherit;
+    /* Колір при наведенні */
 }
 
 .button {
-    display: inline-block; /* Дозволяє додавати відступи */
-    background-color: darkgoldenrod; /* Темно-жовтий фон */
-    color: white; /* Білий текст */
-    padding: 10px 20px; /* Внутрішні відступи */
-    border: 2px solid white; /* Біла рамка */
-    border-radius: 25px; /* Овальна рамка */
-    text-decoration: none; /* Прибирає підкреслення */
-    text-align: center; /* Центрує текст */
-    margin-top: 10px; /* Відстань між елементами */
+    display: inline-block;
+    /* Дозволяє додавати відступи */
+    background-color: darkgoldenrod;
+    /* Темно-жовтий фон */
+    color: white;
+    /* Білий текст */
+    padding: 10px 20px;
+    /* Внутрішні відступи */
+    border: 2px solid white;
+    /* Біла рамка */
+    border-radius: 25px;
+    /* Овальна рамка */
+    text-decoration: none;
+    /* Прибирає підкреслення */
+    text-align: center;
+    /* Центрує текст */
+    margin-top: 10px;
+    /* Відстань між елементами */
 }
 
 .button:hover {
-    background-color: #b8860b; /* Змінює колір фону при наведенні на трохи світліший темно-жовтий */
-    color: white; /* Залишається білий текст при наведенні */
+    background-color: #b8860b;
+    /* Змінює колір фону при наведенні на трохи світліший темно-жовтий */
+    color: white;
+    /* Залишається білий текст при наведенні */
 }
 
 .useful-section {
-    background-color: #f8f9fa; /* Світлий фон */
+    background-color: #f8f9fa;
+    /* Світлий фон */
     padding: 20px;
-    width: 100%; /* На всю ширину */
-    box-sizing: border-box; /* Включити padding у ширину */
-    font-family: 'Arial', sans-serif; /* Гарний шрифт */
-    text-align: center; /* Центрування тексту */
-    border: none; /* Без контурів */
+    width: 100%;
+    /* На всю ширину */
+    box-sizing: border-box;
+    /* Включити padding у ширину */
+    font-family: 'Arial', sans-serif;
+    /* Гарний шрифт */
+    text-align: center;
+    /* Центрування тексту */
+    border: none;
+    /* Без контурів */
 }
 
 .service-card {
-    display: flex; /* Вирівнювання елементів по горизонталі */
-    justify-content: center; /* Центрування вмісту */
-    border: 1px solid #ddd; /* Легкий контур */
+    display: flex;
+    /* Вирівнювання елементів по горизонталі */
+    justify-content: center;
+    /* Центрування вмісту */
+    border: 1px solid #ddd;
+    /* Легкий контур */
     margin-bottom: 15px;
-    max-width: 500px; /* Максимальна ширина картки */
-    margin-left: auto; /* Центрування картки */
-    margin-right: auto; /* Центрування картки */
+    max-width: 500px;
+    /* Максимальна ширина картки */
+    margin-left: auto;
+    /* Центрування картки */
+    margin-right: auto;
+    /* Центрування картки */
 }
 
 .service-image {
-    width: 150px; /* Ширина зображення */
-    height: auto; /* Автоматичне співвідношення */
+    width: 150px;
+    /* Ширина зображення */
+    height: auto;
+    /* Автоматичне співвідношення */
 }
 
 .service-info {
@@ -365,23 +431,28 @@ footer {
 
 .service-info strong {
     font-size: 20px;
-    color: #ffcc33; /* Жовтий колір для назви послуги */
+    color: #ffcc33;
+    /* Жовтий колір для назви послуги */
 }
 
 .service-info p {
     font-size: 14px;
-    color: #555; /* Темний колір для опису */
+    color: #555;
+    /* Темний колір для опису */
 }
 
 .learn-more {
     display: inline-block;
     margin-top: 10px;
-    color: #007bff; /* Синій колір для посилання */
-    text-decoration: none; /* Без підкреслення */
+    color: #007bff;
+    /* Синій колір для посилання */
+    text-decoration: none;
+    /* Без підкреслення */
 }
 
 .learn-more:hover {
-    text-decoration: underline; /* Підкреслення при наведенні */
+    text-decoration: underline;
+    /* Підкреслення при наведенні */
 }
 
 
@@ -391,12 +462,15 @@ footer {
     justify-content: space-between;
     padding-right: 16px;
 }
+
 .main-navigation .logo__image {
     max-width: 200px;
 }
+
 .main-navigation .social-links a {
     text-decoration: none;
 }
+
 .mobile-menu-button {
     display: none;
 }
@@ -405,6 +479,7 @@ footer {
     .main-navigation .menu {
         display: none;
     }
+
     .mobile-menu-button {
         display: block;
         padding: 0;
@@ -412,12 +487,14 @@ footer {
         border: none;
         cursor: pointer;
     }
+
     .mobile-menu-button svg {
         fill: #FFF;
         width: 30px;
         height: 30px;
         margin-left: 16px;
     }
+
     .main-navigation .social-links {
         margin-left: auto;
     }
@@ -440,14 +517,17 @@ footer {
     visibility: hidden;
     pointer-events: none;
 }
+
 .mobile-menu.opened {
     pointer-events: all;
     visibility: visible;
     transform: translateX(0);
 }
+
 .mobile-menu ul {
     list-style: none;
 }
+
 .mobile-menu a {
     display: block;
     padding: 10px;
@@ -455,6 +535,7 @@ footer {
     text-decoration: none;
     color: inherit;
 }
+
 .close-mobile-menu {
     position: absolute;
     top: 20px;
@@ -468,14 +549,12 @@ footer {
     background-color: transparent;
     cursor: pointer;
 }
+
 .close-mobile-menu svg {
     width: 24px;
     height: 24px;
     fill: #FFF;
 }
-
-
-
 
 header {
     position: relative;
@@ -485,7 +564,8 @@ header {
 
 .carousel-inner img {
     height: 100vh;
-    object-fit: cover; /* Зберігає пропорції зображення */
+    object-fit: cover;
+    /* Зберігає пропорції зображення */
 }
 
 .header-text {
@@ -493,9 +573,11 @@ header {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    color: #fff; /* Колір тексту */
+    color: #fff;
+    /* Колір тексту */
     text-align: center;
-    z-index: 10; /* Забезпечує, що текст над зображенням */
+    z-index: 10;
+    /* Забезпечує, що текст над зображенням */
 }
 
 .header-text h1 {
@@ -509,13 +591,17 @@ header {
 }
 
 .header-text p {
-    margin: 0; /* Знімає відступи */
+    margin: 0;
+    /* Знімає відступи */
 }
 
 .header-text {
-    width: 100%; /* Задає ширину 100% */
-    text-align: -webkit-center; /* Центрує текст (за бажанням) */
-    padding: 0 20px; /* Додає бокові відступи, якщо потрібно */
-    box-sizing: border-box; /* Уключає padding у загальну ширину */
+    width: 100%;
+    /* Задає ширину 100% */
+    text-align: -webkit-center;
+    /* Центрує текст (за бажанням) */
+    padding: 0 20px;
+    /* Додає бокові відступи, якщо потрібно */
+    box-sizing: border-box;
+    /* Уключає padding у загальну ширину */
 }
-

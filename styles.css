@@ -270,7 +270,7 @@ section h2::after {
 }
 
 .team-member button:hover {
-    background-color: #ffbb00;
+    background-color: #ffcc33;
     transform: translateY(-5px);
 }
 
@@ -361,7 +361,7 @@ footer {
 .button {
     display: inline-block;
     /* Дозволяє додавати відступи */
-    background-color: darkgoldenrod;
+    background-color: #ffcc33;
     /* Темно-жовтий фон */
     color: white;
     /* Білий текст */
@@ -380,7 +380,7 @@ footer {
 }
 
 .button:hover {
-    background-color: #b8860b;
+    background-color: #ffcc33;
     /* Змінює колір фону при наведенні на трохи світліший темно-жовтий */
     color: white;
     /* Залишається білий текст при наведенні */

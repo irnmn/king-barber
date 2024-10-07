@@ -244,6 +244,8 @@ section h2::after {
 }
 
 .team-member img {
+    object-position: top center;
+    max-width: 100%;
     width: 200px;
     height: 200px;
     border-radius: 50%;
@@ -312,7 +314,7 @@ footer {
     .service-item,
     .team-member,
     .gallery-grid img {
-        width: 50%;
+        width: 45%;
     }
 
     .service-header {

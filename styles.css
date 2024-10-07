@@ -5,7 +5,7 @@
 }
 
 body {
-    font-family: 'Montserrat', sans-serif;
+    font-family: "Comfortaa", sans-serif !important;
     background-color: #3b1313;
     color: #333;
     overflow-x: hidden;
@@ -394,7 +394,7 @@ footer {
     /* На всю ширину */
     box-sizing: border-box;
     /* Включити padding у ширину */
-    font-family: 'Arial', sans-serif;
+    font-family: "Comfortaa", sans-serif;
     /* Гарний шрифт */
     text-align: center;
     /* Центрування тексту */
@@ -605,3 +605,4 @@ header {
     box-sizing: border-box;
     /* Уключає padding у загальну ширину */
 }
+

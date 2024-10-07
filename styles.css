@@ -15,6 +15,8 @@ html {
     scroll-behavior: smooth;
 }
 
+
+/* Стилі для Preloader */
 #preloader {
     position: fixed;
     top: 0;
@@ -31,9 +33,27 @@ html {
     flex-direction: column;
 }
 
+/* Анімація для логотипу */
 .loader-icon {
     width: 100px;
     height: 100px;
+    animation: bounce 1s infinite;
+    /* Задаємо анімацію */
+}
+
+/* Ключові кадри для анімації */
+@keyframes bounce {
+
+    0%,
+    100% {
+        transform: translateY(0);
+        /* Початкова позиція */
+    }
+
+    50% {
+        transform: translateY(-10px);
+        /* Піднімемо логотип вгору */
+    }
 }
 
 #preloader p {
@@ -607,4 +627,3 @@ header {
     box-sizing: border-box;
     /* Уключає padding у загальну ширину */
 }
-

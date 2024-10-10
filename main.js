@@ -24,3 +24,21 @@ document.querySelectorAll('.mobile-menu a').forEach(link => {
         }
     });
 });
+
+// Відкриття модального вікна
+function openModal() {
+    document.getElementById('phoneModal').style.display = 'block';
+}
+
+// Закриття модального вікна
+function closeModal() {
+    document.getElementById('phoneModal').style.display = 'none';
+}
+
+// Закриття модального вікна при кліку поза ним
+window.onclick = function(event) {
+    var modal = document.getElementById('phoneModal');
+    if (event.target == modal) {
+        modal.style.display = 'none';
+    }
+}

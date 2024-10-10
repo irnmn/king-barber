@@ -48,8 +48,8 @@
                 <li><a href="#contact">Контакти</a></li>
             </ul>
             <div class="social-links">
-                <a href="https://t.me/your-telegram-link" target="_blank">
-                    <img src="img/telegram-icon.svg" alt="Telegram" />
+                <a href="#" onclick="openModal()">
+                    <img src="img/telegram-icon.svg" alt="Telegram">
                 </a>
                 <a href="viber://chat?number=your-viber-number" target="_blank">
                     <img src="img/viber-icon.svg" alt="Viber" />
@@ -58,6 +58,25 @@
                     <img src="img/instagram-icon.svg" alt="Instagram" />
                 </a>
             </div>
+<!-- Модальне вікно з номерами -->
+<div id="phoneModal" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <h3>Виберіть номер для дзвінка:</h3>
+        <div class="phone-list">
+            <div class="phone-item">
+                <a href="tel:+380123456789">+38 (012) 345-6789</a>
+                <p class="address">м. Київ, вул. Срібнокільська, 3</p>
+            </div>
+            <div class="phone-item">
+                <a href="tel:+380987654321">+38 (098) 765-4321</a>
+                <p class="address">м. Київ, вул. Урлівська, 16</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
             <button class="mobile-menu-button" id="mobile-menu-button">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
                     <path d="M0 96C0 78.3 14.3 64 32 64l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 128C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 288c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32L32 448c-17.7 0-32-14.3-32-32s14.3-32 32-32l384 0c17.7 0 32 14.3 32 32z" /></svg>
@@ -230,6 +249,8 @@
             <p>Адреса: <a href="https://maps.google.com/?q=м.+Київ,+вул.+Срібнокільська,+3" target="_blank">м. Київ, вул. Срібнокільська, 3</a></p>
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2543.155440003012!2d30.627195576554406!3d50.40094067158279!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4c5aabbdc6109%3A0x732a0275c397f4cc!2zQmFyYmVyc2hvcCAiVGhlIEtpbmciINCR0LDRgNCx0LXRgNGI0L7QvyAtINC80YPQttGB0LrQuNC1INGB0YLRgNC40LbQutC4IC0g0L_QsNGA0LjQutC80LDRhdC10YDRgdC60LDRjw!5e0!3m2!1suk!2sua!4v1726955844984!5m2!1suk!2sua" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             <br>
+            <p>Телефон: <a href="tel:+380980950462">&#43;380&nbsp;98&nbsp;095&#45;04&#45;62</a></p>
+            <p>Інстаграм: <a href="https://www.instagram.com/the.king___king/" target="_blank">The King</a></p>
             <p>Адреса: <a href="https://maps.google.com/?q=м.+Київ,+вул.+Урлівська,+16" target="_blank">м. Київ, вул. Урлівська, 16</a></p>
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d635.723728702038!2d30.621438791088327!3d50.40579599332599!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4c5e789d45873%3A0x6d81d6f610e0e158!2sBARBER19!5e0!3m2!1sru!2sua!4v1728291464244!5m2!1sru!2sua" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 

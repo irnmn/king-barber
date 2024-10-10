@@ -25,20 +25,24 @@ document.querySelectorAll('.mobile-menu a').forEach(link => {
     });
 });
 
-// Відкриття модального вікна
-function openModal() {
-    document.getElementById('phoneModal').style.display = 'block';
+
+// Функція для відкриття модального вікна
+function openModal(modalId) {
+    document.getElementById(modalId).style.display = "block";
 }
 
-// Закриття модального вікна
-function closeModal() {
-    document.getElementById('phoneModal').style.display = 'none';
+// Функція для закриття модального вікна
+function closeModal(modalId) {
+    document.getElementById(modalId).style.display = "none";
 }
 
-// Закриття модального вікна при кліку поза ним
+// Закриває модальне вікно, якщо користувач натискає за його межами
 window.onclick = function(event) {
-    var modal = document.getElementById('phoneModal');
-    if (event.target == modal) {
-        modal.style.display = 'none';
+    var telegramModal = document.getElementById('telegramModal');
+    var viberModal = document.getElementById('viberModal');
+    if (event.target == telegramModal) {
+        telegramModal.style.display = "none";
+    } else if (event.target == viberModal) {
+        viberModal.style.display = "none";
     }
 }

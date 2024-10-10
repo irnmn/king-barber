@@ -48,35 +48,51 @@
                 <li><a href="#contact">Контакти</a></li>
             </ul>
             <div class="social-links">
-                <a href="#" onclick="openModal()">
-                    <img src="img/telegram-icon.svg" alt="Telegram">
+                <a href="#" onclick="openModal('telegramModal')">
+                    <img src="img/telegram-icon.svg" alt="Telegram" />
                 </a>
-                <a href="viber://chat?number=your-viber-number" target="_blank">
+                <a href="#" onclick="openModal('viberModal')">
                     <img src="img/viber-icon.svg" alt="Viber" />
                 </a>
                 <a href="https://www.instagram.com/the.king___king/" target="_blank">
                     <img src="img/instagram-icon.svg" alt="Instagram" />
                 </a>
             </div>
-<!-- Модальне вікно з номерами -->
-<div id="phoneModal" class="modal">
-    <div class="modal-content">
-        <span class="close" onclick="closeModal()">&times;</span>
-        <h3>Виберіть номер для дзвінка:</h3>
-        <div class="phone-list">
-            <div class="phone-item">
-                <a href="tel:+380123456789">+38 (012) 345-6789</a>
-                <p class="address">м. Київ, вул. Срібнокільська, 3</p>
+            <!-- Модальне вікно для Telegram -->
+            <div id="telegramModal" class="modal">
+                <div class="modal-content">
+                    <span class="close" onclick="closeModal('telegramModal')">&times;</span>
+                    <h3>Виберіть номер для Telegram</h3>
+                    <div class="phone-list">
+                        <div class="phone-item">
+                            <a href="https://t.me/+0987654321" target="_blank">098 765 4321</a>
+                            <div class="address">м. Київ, вул. Урлівська, 16</div>
+                        </div>
+                        <div class="phone-item">
+                            <a href="https://t.me/+380980950462" target="_blank">+380 980 950 462</a>
+                            <div class="address">м. Київ, вул. Срібнокільська, 3</div>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="phone-item">
-                <a href="tel:+380987654321">+38 (098) 765-4321</a>
-                <p class="address">м. Київ, вул. Урлівська, 16</p>
+
+            <!-- Модальне вікно для Viber -->
+            <div id="viberModal" class="modal">
+                <div class="modal-content">
+                    <span class="close" onclick="closeModal('viberModal')">&times;</span>
+                    <h3>Виберіть номер для Viber</h3>
+                    <div class="phone-list">
+                        <div class="phone-item">
+                            <a href="viber://chat?number=+0987654321">098 765 4321</a>
+                            <div class="address">м. Київ, вул. Урлівська, 16</div>
+                        </div>
+                        <div class="phone-item">
+                            <a href="viber://chat?number=+380980950462">+380 980 950 462</a>
+                            <div class="address">м. Київ, вул. Срібнокільська, 3</div>
+                        </div>
+                    </div>
+                </div>
             </div>
-        </div>
-    </div>
-</div>
-
-
             <button class="mobile-menu-button" id="mobile-menu-button">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
                     <path d="M0 96C0 78.3 14.3 64 32 64l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 128C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 288c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32L32 448c-17.7 0-32-14.3-32-32s14.3-32 32-32l384 0c17.7 0 32 14.3 32 32z" /></svg>

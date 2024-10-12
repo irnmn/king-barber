@@ -1,70 +1,47 @@
-/* Загальні стилі для всіх елементів */
 * {
     margin: 0;
-    /* Немає відступів навколо елементів */
     padding: 0;
-    /* Немає внутрішніх відступів */
     box-sizing: border-box;
-    /* Включає відступи в ширину/висоту елементів */
 }
 
-/* Основні стилі для тіла сторінки */
 body {
     font-family: "Comfortaa", sans-serif !important;
-    /* Шрифт для тексту */
     background-color: #3b1313;
-    /* Темний фон */
     color: #333;
-    /* Колір тексту */
     overflow-x: hidden;
-    /* Приховує горизонтальну прокрутку */
 }
 
-/* Параметри прокрутки для HTML */
 html {
     scroll-behavior: smooth;
-    /* Плавна прокрутка для якорів */
 }
+
 
 /* Стилі для Preloader */
 #preloader {
     position: fixed;
-    /* Фіксоване позиціонування на екрані */
     top: 0;
-    /* Відстань зверху */
     left: 0;
-    /* Відстань зліва */
     right: 0;
-    /* Відстань справа */
     bottom: 0;
-    /* Відстань знизу */
     background-color: #524c4c78;
-    /* Напівпрозорий темний фон */
+    /* Темний фон */
     color: #fff;
-    /* Колір тексту */
     display: flex;
-    /* Відображення в форматі flex */
     justify-content: center;
-    /* Центрування по горизонталі */
     align-items: center;
-    /* Центрування по вертикалі */
     z-index: 9999;
-    /* Високий z-index для перекриття */
     flex-direction: column;
-    /* Вертикальне вирівнювання */
 }
 
 /* Анімація для логотипу */
 .loader-icon {
     width: 100px;
-    /* Ширина логотипу */
     height: 100px;
-    /* Висота логотипу */
     animation: bounce 1s infinite;
-    /* Застосування анімації відскоку */
+    /* Задаємо анімацію */
 }
 
-/* Ключові кадри для анімації відскоку */
+/* Ключові кадри для анімації */
 @keyframes bounce {
 
     0%,
@@ -81,387 +58,274 @@ html {
 
 #preloader p {
     margin-top: 20px;
-    /* Відступ зверху для тексту */
     font-size: 1.2em;
-    /* Розмір шрифту */
     color: #fff;
-    /* Колір тексту */
 }
 
 #content {
     display: none;
-    /* Приховати контент до завершення preloader */
 }
 
-/* Стилі для навігації */
+/* Навігація */
 nav {
     position: fixed;
-    /* Фіксоване позиціонування */
     width: 100%;
-    /* Ширина на всю ширину екрана */
     background-color: #000;
-    /* Чорний фон */
     z-index: 1000;
-    /* Високий z-index для перекриття */
 }
 
 nav ul {
     display: flex;
-    /* Відображення елементів списку в рядок */
     justify-content: center;
-    /* Центрування списку */
     padding: 1em 0;
-    /* Внутрішні відступи */
 }
 
 nav ul li {
     list-style: none;
-    /* Вимкнення маркерів списку */
     margin: 0 1.5em;
-    /* Відступи між елементами списку */
 }
 
 nav ul li a {
     color: #fff;
-    /* Колір тексту посилання */
     text-decoration: none;
-    /* Вимкнення підкреслення */
     font-weight: 600;
-    /* Товщина шрифту */
     transition: color 0.3s;
-    /* Плавний перехід кольору */
 }
 
 nav ul li a:hover {
     color: #ffcc33;
-    /* Колір при наведенні на посилання */
 }
 
-/* Стилі для шапки */
+/* Шапка */
 header {
     /* background-image: url('img/wp.webp'); */
-    /* Задати фонове зображення (коментовано) */
     background-size: cover;
-    /* Заповнення фону */
     background-position: center;
-    /* Центрування фону */
     height: 100vh;
-    /* Висота шапки на всю висоту вікна */
     color: #000000;
-    /* Колір тексту */
     display: flex;
-    /* Відображення в форматі flex */
     align-items: center;
-    /* Центрування по вертикалі */
     justify-content: center;
-    /* Центрування по горизонталі */
     text-align: center;
-    /* Центрування тексту */
     flex-direction: column;
-    /* Вертикальне вирівнювання */
     animation: fadeIn 1.5s ease-in-out;
-    /* Застосування анімації появи */
 }
 
 header h1 {
     font-size: 4em;
-    /* Розмір заголовка */
     margin-bottom: 0.5em;
-    /* Відступ знизу */
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-    /* Тінь для заголовка */
 }
 
 header p {
     font-size: 1.5em;
-    /* Розмір підзаголовка */
     max-width: 600px;
-    /* Максимальна ширина */
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
-    /* Тінь для підзаголовка */
 }
 
 header a {
     color: inherit;
-    /* Спадкування кольору від батьківського елемента */
     text-decoration: none;
-    /* Вимкнення підкреслення */
 }
 
 /* Анімації */
 @keyframes fadeIn {
     from {
         opacity: 0;
-        /* Початкова непрозорість */
         transform: translateY(20px);
-        /* Позиція */
     }
 
     to {
         opacity: 1;
-        /* Остаточна непрозорість */
         transform: translateY(0);
-        /* Остаточна позиція */
+    }
+}
+
+@keyframes bounce {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-10px);
     }
 }
 
 /* Секції */
 section {
     padding: 4em 0;
-    /* Внутрішні відступи секцій */
     animation: fadeIn 1.5s ease-in-out;
-    /* Застосування анімації появи */
 }
 
 section h2 {
     text-align: center;
-    /* Центрування заголовків секцій */
     font-size: 2.5em;
-    /* Розмір заголовка */
     margin-bottom: 1em;
-    /* Відступ знизу */
     position: relative;
-    /* Відносне позиціонування для псевдоелементів */
 }
 
 section h2::after {
     content: '';
-    /* Псевдоелемент для декоративного ефекту */
     width: 50px;
-    /* Ширина лінії */
     height: 4px;
-    /* Висота лінії */
     background-color: #ffcc33;
-    /* Колір лінії */
     position: absolute;
-    /* Абсолютне позиціонування */
     left: 50%;
-    /* Центрування по горизонталі */
     transform: translateX(-50%);
-    /* Центрування по горизонталі */
     bottom: -10px;
-    /* Відступ знизу */
 }
-
 
 /* Про нас */
 #about {
     background-color: #fff;
-    /* Білий фон для секції "Про нас" */
 }
 
 #about p {
     max-width: 800px;
-    /* Максимальна ширина тексту */
     margin: 0 auto;
-    /* Центрування тексту */
     font-size: 1.2em;
-    /* Розмір шрифту */
     line-height: 1.6em;
-    /* Висота рядка для читабельності */
     text-align: center;
-    /* Центрування тексту */
 }
 
 /* Послуги */
 #services {
     background-color: #f4f4f4;
-    /* Світло-сірий фон для секції "Послуги" */
 }
 
 .service-list {
     display: flex;
-    /* Використання flexbox для вирівнювання елементів */
     justify-content: space-around;
-    /* Розподіл елементів по горизонталі */
     flex-wrap: wrap;
-    /* Перенесення елементів на новий ряд, якщо місця не вистачає */
 }
 
 .service-item {
     background-color: #fff;
-    /* Білий фон для елементів послуг */
     width: 30%;
-    /* Ширина елемента послуги */
     margin: 1em;
-    /* Відступи між елементами */
     padding: 1.5em;
-    /* Внутрішні відступи */
     text-align: center;
-    /* Центрування тексту */
     border-radius: 8px;
-    /* Закруглені краї */
     transition: transform 0.3s;
-    /* Плавний перехід при наведенні */
     position: relative;
-    /* Відносне позиціонування для анімацій */
 }
 
 .service-item:hover {
     transform: translateY(-10px);
-    /* Підйом елемента при наведенні */
 }
 
 .service-header {
     display: flex;
-    /* Використання flexbox для заголовка послуги */
     justify-content: space-between;
-    /* Розподіл елементів заголовка */
     align-items: center;
-    /* Центрування елементів заголовка по вертикалі */
     font-size: 1.5em;
-    /* Розмір шрифту заголовка */
     font-weight: 600;
-    /* Товщина шрифту заголовка */
     padding-bottom: 0.5em;
-    /* Відступ знизу */
     border-bottom: 2px solid #ffcc33;
-    /* Жовта лінія під заголовком */
 }
 
 .price {
     color: #ffcc33;
-    /* Жовтий колір для ціни */
     white-space: nowrap;
-    /* Запобігає переносу тексту */
 }
 
 .service-item p {
     font-size: 1em;
-    /* Розмір шрифту для опису послуги */
     margin-bottom: 1em;
-    /* Відступ знизу для опису */
 }
 
 .duration {
     font-size: 0.9em;
-    /* Розмір шрифту для тривалості */
     color: #777;
-    /* Сірий колір для тривалості */
     margin-bottom: 0.5em;
-    /* Відступ знизу */
     margin-top: 10px;
-    /* Відступ зверху */
+
 }
 
 /* Команда */
 #team {
     background-color: #f4f4f4;
-    /* Світло-сірий фон для секції "Команда" */
 }
 
 .team-list {
     display: flex;
-    /* Використання flexbox для команди */
     justify-content: space-around;
-    /* Розподіл елементів команди */
     flex-wrap: wrap;
-    /* Перенесення елементів на новий ряд */
 }
 
 .team-member {
     width: 30%;
-    /* Ширина елемента команди */
     text-align: center;
-    /* Центрування тексту */
     margin: 1em 0;
-    /* Відступи вертикально */
+
+
 }
 
 .team-member img {
     object-position: top center;
-    /* Позиціонування зображення */
     max-width: 100%;
-    /* Максимальна ширина зображення */
     width: 200px;
-    /* Ширина зображення */
     height: 200px;
-    /* Висота зображення */
     border-radius: 50%;
-    /* Круглі краї зображення */
     object-fit: cover;
-    /* Заповнення області зображення */
     margin-bottom: 1em;
-    /* Відступ знизу для зображення */
 }
 
 .team-member h3 {
     margin-bottom: 0.5em;
-    /* Відступ знизу для імені члена команди */
+
 }
 
 /* Кнопка "Записатись" */
 .team-member button {
     background-color: #ffcc33;
-    /* Жовтий фон для кнопки */
     color: #000;
-    /* Чорний текст на кнопці */
     border: none;
-    /* Без обрамлення */
     padding: 10px 20px;
-    /* Внутрішні відступи */
     font-size: 1em;
-    /* Розмір шрифту для кнопки */
     border-radius: 5px;
-    /* Закруглені краї кнопки */
     margin-top: 20px;
-    /* Відступ зверху */
     cursor: pointer;
-    /* Зміна курсора при наведенні */
     transition: background-color 0.3s, transform 0.3s;
-    /* Плавні переходи */
 }
 
 .team-member button:hover {
     background-color: #ffcc33;
-    /* Залишає жовтий фон при наведенні */
     transform: translateY(-5px);
-    /* Підйом кнопки при наведенні */
 }
 
 /* Контакти */
 #contact {
     background-color: #000;
-    /* Чорний фон для секції "Контакти" */
     color: #fff;
-    /* Білий текст */
     text-align: center;
-    /* Центрування тексту */
 }
 
 #contact p {
     font-size: 1.2em;
-    /* Розмір шрифту для тексту контактів */
     margin-bottom: 1em;
-    /* Відступ знизу */
 }
 
 #contact a {
     color: #ffcc33;
-    /* Жовтий колір для посилань */
     text-decoration: none;
-    /* Без підкреслення */
     font-weight: 600;
-    /* Товщина шрифту */
 }
 
 /* Футер */
 footer {
     background-color: #222;
-    /* Темний фон для футера */
     color: #fff;
-    /* Білий текст */
     text-align: center;
-    /* Центрування тексту */
     padding: 1em 0;
-    /* Внутрішні відступи */
 }
 
 /* Адаптивність */
 @media (max-width: 1000px) {
     .service-item {
         width: 45%;
-        /* Ширина елемента послуги для менших екранів */
     }
 }
 
@@ -471,53 +335,44 @@ footer {
     .team-member,
     .gallery-grid img {
         width: 45%;
-        /* Ширина елементів для менших екранів */
     }
 
     .service-header {
         display: block;
-        /* Вирівнювання заголовка в стовпчик для менших екранів */
     }
 
     .service-header .price {
         margin: 16px 0;
-        /* Відступи для ціни в заголовку */
     }
 
     nav ul li {
         margin: 0 0.5em;
-        /* Відступи для навігаційних пунктів */
     }
 
     header h1 {
         font-size: 2.5em;
-        /* Зменшення розміру заголовка для менших екранів */
     }
 
     header p {
         font-size: 1em;
-        /* Зменшення розміру тексту під заголовком */
     }
 }
 
 @media (max-width: 640px) {
     .service-item {
         width: 95%;
-        /* Ширина елемента послуги для ще менших екранів */
     }
 
     .gallery-grid img {
         width: 40%;
-        /* Ширина зображень у галереї */
     }
 }
 
-/* Стилі для телефонних посилань */
 .phone-link {
     text-decoration: none;
-    /* Без підкреслення */
+    /* Прибирає підкреслення */
     color: inherit;
-    /* Використання кольору тексту батьківського елемента */
+    /* Використовує колір тексту батьківського елемента */
 }
 
 .phone-link:hover {
@@ -525,12 +380,11 @@ footer {
     /* Колір при наведенні */
 }
 
-/* Кнопка */
 .button {
     display: inline-block;
-    /* Вирівнювання елемента в рядок */
+    /* Дозволяє додавати відступи */
     background-color: #ffcc33;
-    /* Жовтий фон */
+    /* Темно-жовтий фон */
     color: white;
     /* Білий текст */
     padding: 10px 20px;
@@ -540,26 +394,24 @@ footer {
     border-radius: 25px;
     /* Овальна рамка */
     text-decoration: none;
-    /* Без підкреслення */
+    /* Прибирає підкреслення */
     text-align: center;
-    /* Центрування тексту */
+    /* Центрує текст */
     margin-top: 10px;
     /* Відстань між елементами */
 }
 
 .button:hover {
     background-color: #ffcc33;
-    /* Залишається жовтим при наведенні */
+    /* Змінює колір фону при наведенні на трохи світліший темно-жовтий */
     color: white;
-    /* Залишає білий текст при наведенні */
+    /* Залишається білий текст при наведенні */
 }
 
-/* Корисна секція */
 .useful-section {
     background-color: #f8f9fa;
     /* Світлий фон */
     padding: 20px;
-    /* Внутрішні відступи */
     width: 100%;
     /* На всю ширину */
     box-sizing: border-box;
@@ -572,7 +424,6 @@ footer {
     /* Без контурів */
 }
 
-/* Картка послуги */
 .service-card {
     display: flex;
     /* Вирівнювання елементів по горизонталі */
@@ -581,7 +432,6 @@ footer {
     border: 1px solid #ddd;
     /* Легкий контур */
     margin-bottom: 15px;
-    /* Відступ знизу */
     max-width: 500px;
     /* Максимальна ширина картки */
     margin-left: auto;
@@ -599,28 +449,23 @@ footer {
 
 .service-info {
     padding: 15px;
-    /* Внутрішні відступи */
 }
 
 .service-info strong {
     font-size: 20px;
-    /* Розмір шрифту для назви послуги */
     color: #ffcc33;
     /* Жовтий колір для назви послуги */
 }
 
 .service-info p {
     font-size: 14px;
-    /* Розмір шрифту для опису */
     color: #555;
     /* Темний колір для опису */
 }
 
 .learn-more {
     display: inline-block;
-    /* Вирівнювання елемента в рядок */
     margin-top: 10px;
-    /* Відстань зверху */
     color: #007bff;
     /* Синій колір для посилання */
     text-decoration: none;
@@ -633,232 +478,145 @@ footer {
 }
 
 
-
-/* Основна навігація */
 .main-navigation {
     display: flex;
-    /* Використання flexbox для вирівнювання елементів навігації */
     align-items: center;
-    /* Вертикальне вирівнювання елементів */
     justify-content: space-between;
-    /* Простір між елементами навігації */
     padding-right: 16px;
-    /* Внутрішній відступ праворуч */
 }
 
-/* Логотип навігації */
 .main-navigation .logo__image {
     max-width: 200px;
-    /* Максимальна ширина логотипу */
 }
 
-/* Соціальні посилання у навігації */
 .main-navigation .social-links a {
     text-decoration: none;
-    /* Без підкреслення для соціальних посилань */
 }
 
-/* Кнопка мобільного меню */
 .mobile-menu-button {
     display: none;
-    /* Сховати кнопку на великих екранах */
 }
 
-/* Стилі для мобільного меню на екранах менше 900px */
 @media (max-width: 900px) {
     .main-navigation .menu {
         display: none;
-        /* Сховати меню на мобільних пристроях */
     }
 
     .mobile-menu-button {
         display: block;
-        /* Показати кнопку мобільного меню */
         padding: 0;
-        /* Внутрішні відступи */
         background-color: transparent;
-        /* Прозорий фон */
         border: none;
-        /* Без рамки */
         cursor: pointer;
-        /* Зміна курсору при наведенні */
     }
 
     .mobile-menu-button svg {
         fill: #FFF;
-        /* Білий колір для SVG-іконки */
         width: 30px;
-        /* Ширина іконки */
         height: 30px;
-        /* Висота іконки */
         margin-left: 16px;
-        /* Відступ зліва */
     }
 
     .main-navigation .social-links {
         margin-left: auto;
-        /* Автоматичний відступ зліва для соціальних посилань */
     }
 }
 
-/* Мобільне меню */
 .mobile-menu {
     position: fixed;
-    /* Фіксоване позиціонування для меню */
     top: 0;
-    /* Відстань зверху */
     left: 0;
-    /* Відстань зліва */
     width: 100%;
-    /* Ширина 100% */
     height: 100%;
-    /* Висота 100% */
     padding: 40px;
-    /* Внутрішні відступи */
     background-color: #000;
-    /* Чорний фон */
     color: #FFF;
-    /* Білий текст */
     text-align: center;
-    /* Центрування тексту */
     z-index: 1001;
-    /* Вищий рівень, щоб бути над іншими елементами */
 
     transition: all .3s ease;
-    /* Плавний перехід для анімацій */
     transform: translateX(-100%);
-    /* Сховати меню зліва */
     visibility: hidden;
-    /* Невидиме за замовчуванням */
     pointer-events: none;
-    /* Вимкнення подій миші */
 }
 
-/* Відкритий стан мобільного меню */
 .mobile-menu.opened {
     pointer-events: all;
-    /* Увімкнення подій миші */
     visibility: visible;
-    /* Видимість меню */
     transform: translateX(0);
-    /* Показати меню */
 }
 
-/* Список елементів мобільного меню */
 .mobile-menu ul {
     list-style: none;
-    /* Без маркерів для списків */
 }
 
-/* Посилання в мобільному меню */
 .mobile-menu a {
     display: block;
-    /* Вирівнювання елемента в рядок */
     padding: 10px;
-    /* Внутрішні відступи */
     font-size: 25px;
-    /* Розмір шрифту */
     text-decoration: none;
-    /* Без підкреслення */
     color: inherit;
-    /* Спадкування кольору тексту */
 }
 
-/* Кнопка закриття мобільного меню */
 .close-mobile-menu {
     position: absolute;
-    /* Абсолютне позиціонування для кнопки закриття */
     top: 20px;
-    /* Відстань зверху */
     right: 20px;
-    /* Відстань справа */
     width: 30px;
-    /* Ширина кнопки */
     height: 30px;
-    /* Висота кнопки */
     display: flex;
-    /* Використання flexbox для центрування */
     align-items: center;
-    /* Центрування по вертикалі */
     justify-content: center;
-    /* Центрування по горизонталі */
     border: none;
-    /* Без рамки */
     background-color: transparent;
-    /* Прозорий фон */
     cursor: pointer;
-    /* Зміна курсору при наведенні */
 }
 
-/* SVG-іконка кнопки закриття */
 .close-mobile-menu svg {
     width: 24px;
-    /* Ширина іконки */
     height: 24px;
-    /* Висота іконки */
     fill: #FFF;
-    /* Білий колір для іконки */
 }
 
-/* Заголовок */
 header {
     position: relative;
-    /* Відносне позиціонування для заголовка */
     height: 100vh;
-    /* Висота на весь екран */
     overflow: hidden;
-    /* Сховати переповнені елементи */
 }
 
-/* Зображення каруселі */
 .carousel-inner img {
     height: 100vh;
-    /* Висота на весь екран */
     object-fit: cover;
     /* Зберігає пропорції зображення */
 }
 
-/* Текст заголовка */
 .header-text {
     position: absolute;
-    /* Абсолютне позиціонування для тексту */
     top: 50%;
-    /* Центрування по вертикалі */
     left: 50%;
-    /* Центрування по горизонталі */
     transform: translate(-50%, -50%);
-    /* Центрування з урахуванням розмірів */
     color: #fff;
-    /* Білий колір тексту */
+    /* Колір тексту */
     text-align: center;
-    /* Центрування тексту */
     z-index: 10;
-    /* Забезпечення, що текст над зображенням */
+    /* Забезпечує, що текст над зображенням */
 }
 
-/* Заголовок у тексті заголовка */
 .header-text h1 {
     font-size: 4em;
-    /* Розмір шрифту для заголовка */
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-    /* Тінь для заголовка */
 }
 
-/* Опис у тексті заголовка */
 .header-text p {
     font-size: 1.5em;
-    /* Розмір шрифту для опису */
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
-    /* Тінь для опису */
 }
 
-/* Відступи для опису */
 .header-text p {
     margin: 0;
     /* Знімає відступи */
 }
 
-/* Додаткові стилі для тексту заголовка */
 .header-text {
     width: 100%;
     /* Задає ширину 100% */
@@ -873,109 +631,64 @@ header {
 /* Стилі для модального вікна */
 .modal {
     display: none;
-    /* Сховати модальне вікно за замовчуванням */
     position: fixed;
-    /* Фіксоване позиціонування для модального вікна */
     z-index: 1000;
-    /* Вищий рівень, щоб бути над іншими елементами */
     left: 0;
-    /* Відстань зліва */
     top: 0;
-    /* Відстань зверху */
     width: 100%;
-    /* Ширина 100% */
     height: 100%;
-    /* Висота 100% */
     background-color: rgba(0, 0, 0, 0.5);
-    /* Напівпрозорий чорний фон */
     justify-content: center;
-    /* Центрування вмісту */
     align-items: center;
-    /* Центрування вмісту */
 }
 
-/* Вміст модального вікна */
 .modal-content {
     background-color: #fff;
-    /* Білий фон для вмісту модального вікна */
     margin: auto;
-    /* Центрування */
     padding: 20px;
-    /* Внутрішні відступи */
     border-radius: 8px;
-    /* Закруглені краї */
     width: 300px;
-    /* Ширина модального вікна */
     text-align: center;
-    /* Центрування тексту */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    /* Тінь для модального вікна */
 }
 
-/* Заголовок у модальному вікні */
 .modal-content h3 {
     margin-bottom: 15px;
-    /* Відступ знизу */
 }
 
-/* Список телефонів */
 .phone-list {
     display: flex;
-    /* Використання flexbox для списку телефонів */
     flex-direction: column;
-    /* Розташування елементів у стовпчик */
     align-items: center;
-    /* Центрування елементів */
 }
 
-/* Елемент списку телефонів */
 .phone-item {
     margin-bottom: 20px;
-    /* Відступ знизу */
     text-align: center;
-    /* Центрування тексту */
 }
 
-/* Посилання телефонів */
 .phone-item a {
     color: #ffcc00;
-    /* Жовтий колір для посилань */
     text-decoration: none;
-    /* Без підкреслення */
     font-size: 18px;
-    /* Розмір шрифту для посилань */
 }
 
-/* Ефект при наведенні на посилання телефонів */
 .phone-item a:hover {
     text-decoration: underline;
-    /* Підкреслення при наведенні */
 }
 
-/* Адреса у елементі списку телефонів */
 .phone-item .address {
     margin: 5px 0;
-    /* Відступи зверху і знизу */
     font-size: 14px;
-    /* Розмір шрифту для адреси */
     color: #333;
-    /* Темний колір для адреси */
 }
 
-/* Кнопка закриття модального вікна */
 .close {
     color: #aaa;
-    /* Сірий колір для кнопки закриття */
     font-size: 28px;
-    /* Розмір шрифту для кнопки закриття */
     font-weight: bold;
-    /* Жирний шрифт */
     position: absolute;
-    /* Абсолютне позиціонування для кнопки */
     top: 10px;
-    /* Відстань зверху */
     right: 15px;
-    /* Відстань справа */
     cursor: pointer;
-    /* Зміна курсору при наведенні */
 }

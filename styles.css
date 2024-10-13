@@ -15,8 +15,6 @@ html {
     scroll-behavior: smooth;
 }
 
-
-/* Стилі для Preloader */
 #preloader {
     position: fixed;
     top: 0;
@@ -24,7 +22,6 @@ html {
     right: 0;
     bottom: 0;
     background-color: #524c4c78;
-    /* Темний фон */
     color: #fff;
     display: flex;
     justify-content: center;
@@ -33,26 +30,21 @@ html {
     flex-direction: column;
 }
 
-/* Анімація для логотипу */
 .loader-icon {
     width: 100px;
     height: 100px;
     animation: bounce 1s infinite;
-    /* Задаємо анімацію */
 }
 
-/* Ключові кадри для анімації */
 @keyframes bounce {
 
     0%,
     100% {
         transform: translateY(0);
-        /* Початкова позиція */
     }
 
     50% {
         transform: translateY(-10px);
-        /* Піднімемо логотип вгору */
     }
 }
 
@@ -66,7 +58,6 @@ html {
     display: none;
 }
 
-/* Навігація */
 nav {
     position: fixed;
     width: 100%;
@@ -96,9 +87,7 @@ nav ul li a:hover {
     color: #ffcc33;
 }
 
-/* Шапка */
 header {
-    /* background-image: url('img/wp.webp'); */
     background-size: cover;
     background-position: center;
     height: 100vh;
@@ -128,7 +117,6 @@ header a {
     text-decoration: none;
 }
 
-/* Анімації */
 @keyframes fadeIn {
     from {
         opacity: 0;
@@ -153,7 +141,6 @@ header a {
     }
 }
 
-/* Секції */
 section {
     padding: 4em 0;
     animation: fadeIn 1.5s ease-in-out;
@@ -177,7 +164,6 @@ section h2::after {
     bottom: -10px;
 }
 
-/* Про нас */
 #about {
     background-color: #fff;
 }
@@ -190,7 +176,6 @@ section h2::after {
     text-align: center;
 }
 
-/* Послуги */
 #services {
     background-color: #f4f4f4;
 }
@@ -244,7 +229,6 @@ section h2::after {
 
 }
 
-/* Команда */
 #team {
     background-color: #f4f4f4;
 }
@@ -278,7 +262,6 @@ section h2::after {
 
 }
 
-/* Кнопка "Записатись" */
 .team-member button {
     background-color: #ffcc33;
     color: #000;
@@ -296,7 +279,6 @@ section h2::after {
     transform: translateY(-5px);
 }
 
-/* Контакти */
 #contact {
     background-color: #000;
     color: #fff;
@@ -314,7 +296,6 @@ section h2::after {
     font-weight: 600;
 }
 
-/* Футер */
 footer {
     background-color: #222;
     color: #fff;
@@ -322,7 +303,6 @@ footer {
     padding: 1em 0;
 }
 
-/* Адаптивність */
 @media (max-width: 1000px) {
     .service-item {
         width: 45%;
@@ -370,81 +350,53 @@ footer {
 
 .phone-link {
     text-decoration: none;
-    /* Прибирає підкреслення */
     color: inherit;
-    /* Використовує колір тексту батьківського елемента */
 }
 
 .phone-link:hover {
     color: inherit;
-    /* Колір при наведенні */
 }
 
 .button {
     display: inline-block;
-    /* Дозволяє додавати відступи */
     background-color: #ffcc33;
-    /* Темно-жовтий фон */
     color: white;
-    /* Білий текст */
     padding: 10px 20px;
-    /* Внутрішні відступи */
     border: 2px solid white;
-    /* Біла рамка */
     border-radius: 25px;
-    /* Овальна рамка */
     text-decoration: none;
-    /* Прибирає підкреслення */
     text-align: center;
-    /* Центрує текст */
     margin-top: 10px;
-    /* Відстань між елементами */
 }
 
 .button:hover {
     background-color: #ffcc33;
-    /* Змінює колір фону при наведенні на трохи світліший темно-жовтий */
     color: white;
-    /* Залишається білий текст при наведенні */
 }
 
 .useful-section {
     background-color: #f8f9fa;
-    /* Світлий фон */
     padding: 20px;
     width: 100%;
-    /* На всю ширину */
     box-sizing: border-box;
-    /* Включити padding у ширину */
     font-family: "Comfortaa", sans-serif;
-    /* Гарний шрифт */
     text-align: center;
-    /* Центрування тексту */
     border: none;
-    /* Без контурів */
 }
 
 .service-card {
     display: flex;
-    /* Вирівнювання елементів по горизонталі */
     justify-content: center;
-    /* Центрування вмісту */
     border: 1px solid #ddd;
-    /* Легкий контур */
     margin-bottom: 15px;
     max-width: 500px;
-    /* Максимальна ширина картки */
     margin-left: auto;
-    /* Центрування картки */
     margin-right: auto;
-    /* Центрування картки */
 }
 
 .service-image {
     width: 150px;
-    /* Ширина зображення */
     height: auto;
-    /* Автоматичне співвідношення */
 }
 
 .service-info {
@@ -454,27 +406,22 @@ footer {
 .service-info strong {
     font-size: 20px;
     color: #ffcc33;
-    /* Жовтий колір для назви послуги */
 }
 
 .service-info p {
     font-size: 14px;
     color: #555;
-    /* Темний колір для опису */
 }
 
 .learn-more {
     display: inline-block;
     margin-top: 10px;
     color: #007bff;
-    /* Синій колір для посилання */
     text-decoration: none;
-    /* Без підкреслення */
 }
 
 .learn-more:hover {
     text-decoration: underline;
-    /* Підкреслення при наведенні */
 }
 
 .main-navigation {
@@ -586,7 +533,6 @@ header {
 .carousel-inner img {
     height: 100vh;
     object-fit: cover;
-    /* Зберігає пропорції зображення */
 }
 
 .header-text {
@@ -595,10 +541,8 @@ header {
     left: 50%;
     transform: translate(-50%, -50%);
     color: #fff;
-    /* Колір тексту */
     text-align: center;
     z-index: 10;
-    /* Забезпечує, що текст над зображенням */
 }
 
 .header-text h1 {
@@ -613,21 +557,15 @@ header {
 
 .header-text p {
     margin: 0;
-    /* Знімає відступи */
 }
 
 .header-text {
     width: 100%;
-    /* Задає ширину 100% */
     text-align: -webkit-center;
-    /* Центрує текст (за бажанням) */
     padding: 0 20px;
-    /* Додає бокові відступи, якщо потрібно */
     box-sizing: border-box;
-    /* Уключає padding у загальну ширину */
 }
 
-/* Стилі для модального вікна */
 .modal {
     display: none;
     position: fixed;

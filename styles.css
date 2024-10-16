@@ -296,6 +296,10 @@ section h2::after {
     font-weight: 600;
 }
 
+#contact .hours {
+    color: #ffd700;
+}
+
 footer {
     background-color: #222;
     color: #fff;
@@ -628,4 +632,9 @@ header {
     top: 10px;
     right: 15px;
     cursor: pointer;
+}
+
+p i {
+    margin-right: 8px; /* Відступ між іконкою і текстом */
+    color: gray; /* Колір іконки */
 }
